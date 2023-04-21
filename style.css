@@ -1,0 +1,301 @@
+/* Write some CSS below */
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 18px;
+  font-family: 'Overpass';
+}
+
+h1, h2, h3 {
+  font-family: 'Chivo';
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 46px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+font-size: 22px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.atop-head{
+  background-image: url('images/atop-banner.png');
+  background-position: center;
+  background-size: cover;
+}
+.atop-head p{
+  color: #430303;
+  margin-top: -55px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.logo-top{
+  display:flex;
+  align-items: center;
+}
+
+.logo-top img{
+  height: 90px;
+  width: 90px;
+}
+
+.phone{
+  list-style:none;
+  text-align: right;
+}
+
+.banner {
+  background-image: url('images/Chinese\ Food.png');
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0;
+  text-align: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.banner p{
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.bannerr {
+  background-image: url('images/atop-banner.png');
+  background-position: center;
+  background-size: cover;
+  padding: 10px 0;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.bannerr p{
+  font-weight: 400;
+  font-size: 18px;
+  color: #010101;
+  margin-bottom: 20px;
+  line-height: 100%;
+  text-align:center;
+}
+
+
+.banner-white {
+  background-image: url('images/banner-white.png');
+  background-position: center;
+  background-size: cover;
+  padding: 120px 0;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.banner-white p{
+  font-weight: 400;
+  font-size: 18px;
+  color: #010101;
+  margin-bottom: 20px;
+  line-height: 80%;
+  text-align:center;
+}
+
+.btn-blue {
+  background-color: #000000;
+   color: white;
+   border-radius: 4px;
+   padding: 20px 50px;
+   font-size: 20px;
+   font-weight: 700;
+   text-align: center;
+   background-image: linear-gradient(rgb(215, 181, 127), rgb(153, 69, 5));
+}
+
+.btn-blue:hover{
+  opacity: 0.7;
+  font-size: 30px;
+}
+
+.container {
+  width: 900px;
+  margin: 20px auto;
+}
+
+.card-white {
+  background-color: rgb(208, 105, 36);
+  background-image: linear-gradient(rgb(215, 181, 127), rgb(233, 213, 198));
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(147, 48, 6, 0.1);
+  margin: 8px;
+  border-radius: 5px;
+}
+
+.card-white img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color:#A1420B;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer p {
+  font-size: 18px;
+  padding: 3px 0;
+}
+
+.cards-inline{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.zoom {
+  transform: scale(1);
+  transition: transform 0.3s ease-out; 
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.btn-black {
+  background-color: #060606;
+  background-image: linear-gradient(rgb(12, 12, 11), rgb(100, 99, 99));
+   color: white;
+   border-radius: 4px;
+   padding: 10px 30px;
+   font-size: 20px;
+   font-weight: 600;
+   text-align: center;
+}
+
+.btn-black:hover{
+  opacity: 0.7;
+  font-size: 30px;
+}
+
+@media (max-width:960px){
+  .container {
+    width:900px;
+  }
+  .card-inline{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media (max-width:720px){
+  .container {
+    width: 680px;
+  }
+  .card-inline{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (max-width:540px){
+  .container {
+    width:480px;
+  }
+  .card-inline{
+    grid-template-columns: 1fr;
+  }
+}
+
+.siteFooterBar {
+	padding-top: 10px;
+	width: 100%;
+	height: 78px;
+	color: #f6f2f2;
+	background: #A1420B;
+}
+
+.content {
+  background-position: center;
+  background-size: cover;
+	display: block;
+	margin: 0px auto;
+	text-align: center;
+	font: 25px overpass, serif;
+	font-size: 14px;
+  width:250px;
+}
+
+.foot {
+ display:inline;
+    line-height: 70px;
+}
+.content img {
+    height:60px;
+    width: 60px;
+    float:left;
+}
+
+
+.list-inline {
+  list-style:none;
+  text-align: right;
+}
+
+.list-inline li {
+  display: inline;
+}
+
+.list-inline i {
+  font-size: 40px;
+  color: rgb(249, 248, 247);
+  letter-spacing: 10px;
+  
+}
+
+.list-inline i:hover {
+  color: rgb(180, 180, 180);
+}
+
+.cardfooter{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  margin: -27px auto;
+  background-size: cover;
+}
+.social {
+  text-align: right;
+}
+
+
+.list-inline-star{
+  list-style:none;
+  text-align: center;
+}
+
+.list-inline-star li {
+  display: inline;
+}
+
+.list-inline-star i {
+  font-size: 20px;
+  color: rgb(249, 248, 247);
+  letter-spacing: 10px;
+}
+
+.list-inline-star i:hover {
+  color: rgb(180, 180, 180);
+}
